@@ -78,7 +78,7 @@ def merge_csv():
 def update_tool():
 	import requests as r
 	banner()
-	source = r.get("https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/master/.image/.version")
+	source = r.get("https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/main/.image/.version")
 	if source.text == '1':
 		print(greenColor+'['+cyanColor+'+'+greenColor+']'+cyanColor+' alredy latest version')
 	else:
@@ -86,9 +86,9 @@ def update_tool():
 		os.system('rm *.py');time.sleep(3)
 		print(greenColor+'['+cyanColor+'+'+greenColor+']'+cyanColor+' getting latest files ...')
 		os.system("""
-			curl -s -O https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/master/GetGroupUserData.py
-			curl -s -O https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/master/setup.py
-			curl -s -O https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/master/SendMessageToAll.py
+			curl -s -O https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/main/GetGroupUserData.py
+			curl -s -O https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/main/setup.py
+			curl -s -O https://raw.githubusercontent.com/dhanrajdadhich78/TelegramTools/main/SendMessageToAll.py
 			chmod 777 *.py
 			""");time.sleep(3)
 		print(greenColor+'\n['+cyanColor+'+'+greenColor+']'+cyanColor+' update compled.\n')
